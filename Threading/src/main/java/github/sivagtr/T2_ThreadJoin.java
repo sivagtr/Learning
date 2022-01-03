@@ -2,10 +2,21 @@ package github.sivagtr;
 
 import java.util.stream.IntStream;
 
+
+/**
+ * ------------------------------------------------------------
+ * Problem: How to execute statements after thread execution completed
+ * Solution: Use Join, this waits for the thread to complete execution
+ * ============================================================
+ * Further Problem: NA
+ * ------------------------------------------------------------
+ */
+
 /**
  * Example for Thread Join
  *
  * The statements will be executed after certain thread completes execution.
+ *
  */
 class ThreadJoin {
 	public static void main(String[] args) {

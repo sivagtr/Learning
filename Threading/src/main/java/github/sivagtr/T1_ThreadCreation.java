@@ -1,4 +1,12 @@
 package github.sivagtr;
+/**
+ * ------------------------------------------------------------
+ * Problem: Serial processing, doesn't utilize CPU fully.
+ * Solution: Use Threading
+ * ============================================================
+ * Further Problem: Critical sections have issues.
+ * ------------------------------------------------------------
+ */
 
 /**
  * Thread Creation example

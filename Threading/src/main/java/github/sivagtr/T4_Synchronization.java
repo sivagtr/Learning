@@ -1,4 +1,12 @@
 package github.sivagtr;
+/**
+ * ------------------------------------------------------------
+ * Problem: Multi-Threading doesn't respect critical sections resulting in compromising predictable output
+ * Solution: Use synchronization for critical sections
+ * ============================================================
+ * Further Problem: If synchronization is not used properly, it ends with serial processing
+ * ------------------------------------------------------------
+ */
 
 /**
  * Example for not having synchronization lead to wrong counter values.
