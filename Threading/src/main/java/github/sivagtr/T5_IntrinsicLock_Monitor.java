@@ -2,16 +2,15 @@ package github.sivagtr;
 
 /**
  * ------------------------------------------------------------
+ * <p>
  * Problem: Protecting critical sections when threading
+ * <br>
  * Solution: Using synchronized block
- * ============================================================
- * Further Problem: Using synchronization method can lead to serial processing, because of class/object level locking
- * Even when there is no dependency, ends up in serial processing.
- * ------------------------------------------------------------
- */
-
-/**
+ * </p>
+ * <br>
+ * <br>
  * Simple example demonstrates: Intrinsic Lock (Monitor)
+ * <br>
  * -----------------------------------------------------
  * <p>
  * When a method is used as synchronized, the lock will be acquired at class level.
@@ -26,14 +25,28 @@ package github.sivagtr;
  * Thread 1 has sleep, we can see thread 2 can't perform any operation.
  * <p>
  * If we remove synchronized keyword for any one method, it executes simultaneously.
- *
+ * <br>
+ * <br>
+ * ============================================================
+ * <br>
+ * Further Problem:
+ * <ol>
+ *     <li>
+ *         Using synchronization method can lead to serial processing, because of class/object level locking
+ *     </li>
+ *     <li>
+ *         Even when there is no dependency, ends up in serial processing.
+ *     </li>
+ * </ol>
+ * ------------------------------------------------------------
  */
-class IntrinsicLock_Monitor {
+
+public class T5_IntrinsicLock_Monitor {
 	private int counter1 = 0;
 	private int counter2 = 0;
 
 	public static void main(String[] args) {
-		IntrinsicLock_Monitor monitor = new IntrinsicLock_Monitor();
+		T5_IntrinsicLock_Monitor monitor = new T5_IntrinsicLock_Monitor();
 		Thread t1 = new Thread(() -> {
 			for(int i = 0; i < 100; i++) {
 				monitor.increment1();

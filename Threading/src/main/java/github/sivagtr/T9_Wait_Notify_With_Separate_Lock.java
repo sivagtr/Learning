@@ -4,6 +4,7 @@ package github.sivagtr;
  * ------------------------------------------------------------
  * <br>
  * Problem: How to communicate with other threads. Instead of intrinsic locks, we can use Object lock
+ * <br>
  * Solution: Using Wait/Notify
  *
  * <p>
@@ -18,14 +19,15 @@ package github.sivagtr;
  * ============================================================
  * <br>
  * Further Problem: Same Object need to be used for Wait and Notify
+ * <br>
  * ------------------------------------------------------------
  */
-class Wait_Notify_With_Separate_Lock {
+public class T9_Wait_Notify_With_Separate_Lock {
 
 	private final Object lock = new Object();
 
 	public static void main(String[] args) {
-		Wait_Notify_With_Separate_Lock wait_notify = new Wait_Notify_With_Separate_Lock();
+		T9_Wait_Notify_With_Separate_Lock wait_notify = new T9_Wait_Notify_With_Separate_Lock();
 		Thread t1 = new Thread(() -> {
 			try {
 				wait_notify.WaitingMethod();

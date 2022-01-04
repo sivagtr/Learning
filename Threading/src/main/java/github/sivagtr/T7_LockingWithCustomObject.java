@@ -2,13 +2,18 @@ package github.sivagtr;
 
 /**
  * ------------------------------------------------------------
+ * <p>
  * Problem: How to Avoid Intrinsic Locks (Monitor)
+ * <br>
  * Solution: Create a separate Object for locking and use it for synchronization
+ * </p>
  * ============================================================
+ * <br>
  * Further Problem: NA
+ * <br>
  * ------------------------------------------------------------
  */
-class LockingWithCustomObject {
+public class T7_LockingWithCustomObject {
 	private int counter1 = 0;
 	private int counter2 = 0;
 
@@ -16,7 +21,7 @@ class LockingWithCustomObject {
 	private final Object lock2 = new Object();
 
 	public static void main(String[] args) {
-		LockingWithCustomObject monitor = new LockingWithCustomObject();
+		T7_LockingWithCustomObject monitor = new T7_LockingWithCustomObject();
 		Thread t1 = new Thread(() -> {
 			for(int i = 0; i < 100; i++) {
 				monitor.increment1();

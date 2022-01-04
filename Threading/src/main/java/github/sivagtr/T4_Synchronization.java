@@ -1,18 +1,23 @@
 package github.sivagtr;
 /**
  * ------------------------------------------------------------
+ * <p>
  * Problem: Multi-Threading doesn't respect critical sections resulting in compromising predictable output
+ * <br>
  * Solution: Use synchronization for critical sections
+ * </p>
  * ============================================================
+ * <br>
  * Further Problem: If synchronization is not used properly, it ends with serial processing
+ * <br>
  * ------------------------------------------------------------
  */
 
-/**
- * Example for not having synchronization lead to wrong counter values.
- */
 class SynchronizationFailed {
 
+	/**
+	 * Example for not having synchronization lead to wrong counter values.
+	 */
 	private static Integer counter = 0;
 
 	public static void main(String[] args) {
@@ -48,7 +53,7 @@ class SynchronizationFailed {
 /**
  * This has proper synchronization.
  */
-class SynchronizationTest {
+public class T4_Synchronization {
 
 	private static Integer counter = 0;
 

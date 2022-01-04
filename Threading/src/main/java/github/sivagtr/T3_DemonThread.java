@@ -3,21 +3,25 @@ package github.sivagtr;
 import static java.lang.Thread.sleep;
 /**
  * ------------------------------------------------------------
+ * <p>
  * Problem: Threading need to execute in background
+ * <br>
  * Solution: Use demon thread flag to make thread execute in background
+ * </p>
+ * <br>
+ * <p>
+ *     Note: Demon Threads will get killed if there are no worker threads.
+ * </p>
  * ============================================================
+ * <br>
  * Further Problem: If there are NO Working threads, Demon threads will get killed
+ * <br>
  * ------------------------------------------------------------
  */
 
-/**
- * Example for Demon Threads
- *
- * Demon Threads will get killed if there are no worker threads.
- */
-class ThreadDemonTest {
+public class T3_DemonThread {
 	public static void main(String[] args) {
-		ThreadDemonTest threadDemonTest = new ThreadDemonTest();
+		T3_DemonThread threadDemonTest = new T3_DemonThread();
 		threadDemonTest.exec();
 	}
 

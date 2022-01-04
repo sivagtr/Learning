@@ -2,18 +2,25 @@ package github.sivagtr;
 
 /**
  * ------------------------------------------------------------
+ * <p>
  * Problem: Entire method have to be locked.
+ * <br>
  * Solution: Have synchronized block to lock only critical sections
+ * </p>
  * ============================================================
- * Further Problem: Still the lock is at object/class level, which will still wait for other thread to complete even when there is no dependency
+ * <br>
+ * Further Problem:
+ * <br>Still the lock is at object/class level, which will still wait for other thread to complete even when there is no dependency
+ * <br>
  * ------------------------------------------------------------
  */
-class SynchronizedBlock {
+
+public class T6_SynchronizedBlock {
 	private int counter1 = 0;
 	private int counter2 = 0;
 
 	public static void main(String[] args) {
-		SynchronizedBlock monitor = new SynchronizedBlock();
+		T6_SynchronizedBlock monitor = new T6_SynchronizedBlock();
 		Thread t1 = new Thread(() -> {
 			for(int i = 0; i < 100; i++) {
 				monitor.increment1();

@@ -5,22 +5,23 @@ import java.util.stream.IntStream;
 
 /**
  * ------------------------------------------------------------
+ * <br>
  * Problem: How to execute statements after thread execution completed
+ * <br>
  * Solution: Use Join, this waits for the thread to complete execution
+ * <br>
+ * <br>
+ * The statements will be executed after certain thread completes execution.
  * ============================================================
+ * <br>
  * Further Problem: NA
+ * <br>
  * ------------------------------------------------------------
  */
 
-/**
- * Example for Thread Join
- *
- * The statements will be executed after certain thread completes execution.
- *
- */
-class ThreadJoin {
+public class T2_ThreadJoin {
 	public static void main(String[] args) {
-		ThreadJoin main = new ThreadJoin();
+		T2_ThreadJoin main = new T2_ThreadJoin();
 		main.exec();
 	}
 

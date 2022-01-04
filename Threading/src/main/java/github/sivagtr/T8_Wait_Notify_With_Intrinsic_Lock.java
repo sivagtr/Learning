@@ -3,6 +3,7 @@ package github.sivagtr;
  * ------------------------------------------------------------
  * <br>
  * Problem: How to communicate with other threads.
+ * <br>
  * Solution: Using Wait/Notify
  *
  * <p>
@@ -17,12 +18,13 @@ package github.sivagtr;
  * ============================================================
  * <br>
  * Further Problem: Intrinsic lock.
+ * <br>
  * ------------------------------------------------------------
  */
-class Wait_Notify_With_Intrinsic_Lock {
+public class T8_Wait_Notify_With_Intrinsic_Lock {
 
 	public static void main(String[] args) {
-		Wait_Notify_With_Intrinsic_Lock wait_notify = new Wait_Notify_With_Intrinsic_Lock();
+		T8_Wait_Notify_With_Intrinsic_Lock wait_notify = new T8_Wait_Notify_With_Intrinsic_Lock();
 		Thread t1 = new Thread(() -> {
 			try {
 				wait_notify.WaitingMethod();

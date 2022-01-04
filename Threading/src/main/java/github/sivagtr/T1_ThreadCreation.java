@@ -1,20 +1,27 @@
 package github.sivagtr;
 /**
  * ------------------------------------------------------------
+ * <br>
  * Problem: Serial processing, doesn't utilize CPU fully.
+ * <br>
  * Solution: Use Threading
+ * <br>
+ * <br>
+ *     Thread Creation example
+ *     <ol>
+ *         <li>With Extending Thread</li>
+ *         <li>With Implements Runnable</li>
+ *         <li>With Lambda</li>
+ *     </ol>
+ *
  * ============================================================
+ * <br>
  * Further Problem: Critical sections have issues.
+ * <br>
  * ------------------------------------------------------------
  */
 
-/**
- * Thread Creation example
- *      1. With Extending Thread
- *      2. With Implements Runnable
- *      3. With Lambda
- */
-class ThreadCreation {
+public class T1_ThreadCreation {
 	public static void main(String... args){
 		Thread t1 = new Thread(new ThreadCreationWithExtending());
 		Thread t2 = new Thread(new ThreadWithImplements());
