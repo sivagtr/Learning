@@ -1,4 +1,4 @@
-package github.sivagtr;
+package github.sivagtr.B_InterThreadCommunication;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;

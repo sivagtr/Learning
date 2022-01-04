@@ -1,4 +1,4 @@
-package github.sivagtr;
+package github.sivagtr.B_InterThreadCommunication;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package github.sivagtr;
+package github.sivagtr.A_ThreadManipulation;
 
 import java.util.stream.IntStream;
 

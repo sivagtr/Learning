@@ -1,4 +1,4 @@
-package github.sivagtr;
+package github.sivagtr.B_InterThreadCommunication;
 /**
  * ------------------------------------------------------------
  * <br>

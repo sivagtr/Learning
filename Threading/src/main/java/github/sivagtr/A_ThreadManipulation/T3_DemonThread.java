@@ -1,4 +1,4 @@
-package github.sivagtr;
+package github.sivagtr.A_ThreadManipulation;
 
 import static java.lang.Thread.sleep;
 /**
