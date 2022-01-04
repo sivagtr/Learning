@@ -18,7 +18,7 @@ package github.sivagtr;
  * <p>
  * Since the lock is acquired at class level, other threads can't perform any operations if the thread doesn't exits.
  * <p>
- * Here is a example, Thread1 incrementing counter1 & Thread2 incrementing counter2.
+ * Here is a example, Thread1 incrementing counter1 and Thread2 incrementing counter2.
  * Both are independent, But once thread1 enters. Thread 2 can't perform any operation because both methods have synchronized at method level.
  * Means, it acquires at class level.
  * <p>

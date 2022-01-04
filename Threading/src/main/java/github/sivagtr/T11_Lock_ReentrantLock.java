@@ -18,7 +18,6 @@ import java.util.concurrent.locks.ReentrantLock;
  * </li>
  * <li>
  *     Fairness is a constructor parameter for Reentrant Lock.
- * </li>
  *     <ol>
  *         <li>
  *             True: It allows long lasting thread to take up the task.
@@ -31,6 +30,7 @@ import java.util.concurrent.locks.ReentrantLock;
  *             Ends Up: Starvation But Fast since new thread can take task and process.
  *         </li>
  *     </ol>
+ *     </li>
  * <li>
  *     Contains Waiting Queue, for the threads.
  * </li>
@@ -52,6 +52,7 @@ public class T11_Lock_ReentrantLock {
 	/**
 	 * Unlocking can be done in another method.
 	 * Flexibility for locking and unlocking.
+	 * @param args main
 	 */
 	public static void main(String[] args) {
 		T11_Lock_ReentrantLock lock_reentrantLock = new T11_Lock_ReentrantLock();

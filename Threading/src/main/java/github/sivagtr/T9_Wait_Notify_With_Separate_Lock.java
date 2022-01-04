@@ -7,7 +7,8 @@ package github.sivagtr;
  * <br>
  * Solution: Using Wait/Notify
  *
- * <p>
+ * <br>
+ * <br>
  * NOTE:
  * <ol>
  *     <li>Wait/Notify can be used only in the Synchronized Block or Method.</li>
@@ -15,7 +16,6 @@ package github.sivagtr;
  *     <li>All the statements in the synchronized block/method should be executed.</li>
  *     <li>Then control will notify the thread.</li>
  * </ol>
- * </p>
  * ============================================================
  * <br>
  * Further Problem: Same Object need to be used for Wait and Notify
