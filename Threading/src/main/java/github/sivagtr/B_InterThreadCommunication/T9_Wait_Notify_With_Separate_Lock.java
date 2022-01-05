@@ -67,3 +67,12 @@ public class T9_Wait_Notify_With_Separate_Lock {
 		}
 	}
 }
+/**
+ * Output:
+ *
+ * Before Wait in WaitingMethod..
+ * Before Notify in NotifyMethod..
+ * Still this is executed, Lock not released until exiting of synchronized block
+ * Exiting NotifyMethod
+ * After Wait.. Executing Further Steps
+ */

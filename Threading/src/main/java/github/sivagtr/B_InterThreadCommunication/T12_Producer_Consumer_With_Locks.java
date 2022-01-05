@@ -66,3 +66,10 @@ public class T12_Producer_Consumer_With_Locks {
 		lock.unlock();
 	}
 }
+/**
+ * Output:
+ * 1. In Produce...
+ * 2. In Consume Method..
+ * 3. After Signal, Still in Consume method.. Executing remaining steps...
+ * 4. Continuing after signal/notify in produce method...
+ */

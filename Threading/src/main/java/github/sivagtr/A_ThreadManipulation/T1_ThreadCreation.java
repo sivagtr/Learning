@@ -51,3 +51,9 @@ class ThreadWithImplements implements Runnable{
 		System.out.printf("[%s] : This is thread created with implements Runnable\n", Thread.currentThread().getName());
 	}
 }
+/**
+ * Output:
+ * [With Implementing Runnable] : This is thread created with implements Runnable
+ * [With Extending Thread] : This is thread created with extending Thread class
+ * [With Implementing Runnable, Lambda] : This is thread created with implements Runnable
+ */

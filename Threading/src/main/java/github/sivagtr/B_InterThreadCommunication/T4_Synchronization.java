@@ -93,3 +93,10 @@ public class T4_Synchronization {
 		counter++;
 	}
 }
+/**
+ * Output:
+ * The counter value 2000
+ *
+ * Without:
+ * The counter value 1821
+ */

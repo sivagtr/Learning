@@ -103,3 +103,10 @@ public class T11_Lock_ReentrantLock {
 	//			counter++;
 	//	}
 }
+/**
+ * Output:
+ * Final Counter Value:- 20000
+ *
+ * If uncommented:
+ * Final Counter Value:- 17553
+ */

@@ -82,3 +82,39 @@ public class T10_Producer_Consumer_Wait_Notify {
 		ct.start();
 	}
 }
+/**
+ *
+ * Output:
+ *
+ * Adding new element 0
+ * Adding new element 1
+ * Adding new element 2
+ * Adding new element 3
+ * Adding new element 4
+ * Adding new element 5
+ * Adding new element 6
+ * Adding new element 7
+ * Adding new element 8
+ * Adding new element 9
+ * Producer reached limit.. Proceeding to waiting state !!
+ * Removing the element 0
+ * Removing the element 1
+ * Removing the element 2
+ * Removing the element 3
+ * Removing the element 4
+ * Removing the element 5
+ * Removing the element 6
+ * Removing the element 7
+ * Removing the element 8
+ * Removing the element 9
+ * Consumer reached limit.. Proceeding to waiting state !!
+ * Adding new element 10
+ * Adding new element 11
+ * Adding new element 12
+ * Adding new element 13
+ * Adding new element 14
+ * Adding new element 15
+ * Adding new element 16
+ * Adding new element 17
+ * Adding new element 18
+ */

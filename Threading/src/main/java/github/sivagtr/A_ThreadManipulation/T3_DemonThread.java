@@ -64,3 +64,17 @@ public class T3_DemonThread {
 		}
 	}
 }
+/**
+ * Output:
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * Running Demon Thread...!!!
+ * End of Worker Thread
+ * Demon will be killed after all worker threads are done...
+ */

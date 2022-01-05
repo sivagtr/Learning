@@ -73,4 +73,26 @@ public class T2_ThreadJoin {
 		}
 	}
 }
-
+/**
+ * Output:
+ * [Thread-0] : Value : 1
+ * [Thread-0] : Value : 2
+ * [Thread-1] : Value : 100
+ * [Thread-0] : Value : 3
+ * [Thread-0] : Value : 4
+ * [Thread-0] : Value : 5
+ * [Thread-1] : Value : 101
+ * [Thread-0] : Value : 6
+ * [Thread-0] : Value : 7
+ * [Thread-0] : Value : 8
+ * [Thread-1] : Value : 102
+ * [Thread-0] : Value : 9
+ * Executing the next statements !!!!!
+ * [Thread-1] : Value : 103
+ * [Thread-1] : Value : 104
+ * [Thread-1] : Value : 105
+ * [Thread-1] : Value : 106
+ * [Thread-1] : Value : 107
+ * [Thread-1] : Value : 108
+ * [Thread-1] : Value : 109
+ */
