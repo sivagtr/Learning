@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * <p>
  * Note:
  * <br>
- * A Fixed number of threads are created. The same threads are used for executing all the tasks.
+ * A Fixed number of threads are created. The same threads ar used for executing all the tasks.
  * <br>
  * The application doesn't end, since Executors will be continuously running.
  * It creates the thread pool and waits so that it reduces expensive thread creation.
