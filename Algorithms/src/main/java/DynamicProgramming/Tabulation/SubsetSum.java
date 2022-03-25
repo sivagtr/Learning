@@ -23,7 +23,7 @@ package DynamicProgramming.Tabulation;
 public class SubsetSum {
     public static void main(String[] args) {
         SubsetSum subsetSum = new SubsetSum();
-        int sum = 9;
+        int sum = 12;
         int[] values = {1, 3, 5, 6};
         boolean[][] dp = subsetSum.containsValidSubset(sum, values);
         for (boolean[] dr : dp) {
@@ -32,6 +32,9 @@ public class SubsetSum {
             }
             System.out.println();
         }
+	    System.out.println();
+	    System.out.println();
+		System.out.println("Final Choice -- Subset can be formed ? -- "+dp[dp.length-1][dp[0].length-1]);
     }
 
     private boolean[][] containsValidSubset(int sum, int[] values) {
