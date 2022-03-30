@@ -20,12 +20,12 @@ package DynamicProgramming.Tabulation;
  * Similar to knapsack, instead of getting MAX value we can do simple || condition to measure whether
  * subset can be formed with that sum or not.
  */
-public class SubsetSum {
+public class DP1_A_SubsetSum {
     public static void main(String[] args) {
-        SubsetSum subsetSum = new SubsetSum();
+        DP1_A_SubsetSum DP1ASubsetSum = new DP1_A_SubsetSum();
         int sum = 12;
         int[] values = {1, 3, 5, 6};
-        boolean[][] dp = subsetSum.containsValidSubset(sum, values);
+        boolean[][] dp = DP1ASubsetSum.containsValidSubset(sum, values);
         for (boolean[] dr : dp) {
             for (boolean d : dr) {
                 System.out.print(d + " ");

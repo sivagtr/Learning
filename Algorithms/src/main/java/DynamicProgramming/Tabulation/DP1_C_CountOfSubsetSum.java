@@ -19,10 +19,10 @@ package DynamicProgramming.Tabulation;
  * Similar to knapsack, instead of getting MAX value we can do simple '+' condition to get the count
  * of subset can be formed with that sum or not.
  */
-public class CountOfSubsetSum {
+public class DP1_C_CountOfSubsetSum {
 	public static void main(String[] args) {
-		CountOfSubsetSum countOfSubsetSum = new CountOfSubsetSum();
-		countOfSubsetSum.perform();
+		DP1_C_CountOfSubsetSum DP1CCountOfSubsetSum = new DP1_C_CountOfSubsetSum();
+		DP1CCountOfSubsetSum.perform();
 	}
 
 	private void perform() {

@@ -30,10 +30,10 @@ import java.util.Arrays;
  * Similar to knapsack, instead of getting MAX value we can do simple || condition to measure whether
  * subset can be formed with that sum or not.
  */
-public class EqualSubsetSum {
+public class DP1_B_EqualSubsetSum {
 	public static void main(String[] args) {
-		EqualSubsetSum equalSubsetSum = new EqualSubsetSum();
-		equalSubsetSum.canFormEqualSubsetSum();
+		DP1_B_EqualSubsetSum DP1BEqualSubsetSum = new DP1_B_EqualSubsetSum();
+		DP1BEqualSubsetSum.canFormEqualSubsetSum();
 	}
 
 	private void canFormEqualSubsetSum() {

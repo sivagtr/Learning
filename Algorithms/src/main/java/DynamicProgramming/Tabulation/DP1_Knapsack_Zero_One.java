@@ -2,7 +2,7 @@ package DynamicProgramming.Tabulation;
 
 import java.util.function.Supplier;
 
-public class Knapsack_Zero_One {
+public class DP1_Knapsack_Zero_One {
 
     Supplier<Knapsack> knapsackSupplier = () -> {
         Knapsack knapsack = new Knapsack();
@@ -14,7 +14,7 @@ public class Knapsack_Zero_One {
     private int[][] dp;
 
     public static void main(String[] args) {
-        Knapsack_Zero_One knapsack_zero_one = new Knapsack_Zero_One();
+        DP1_Knapsack_Zero_One knapsack_zero_one = new DP1_Knapsack_Zero_One();
         knapsack_zero_one.performKnapsack();
     }
 
