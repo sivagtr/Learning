@@ -2,13 +2,27 @@ package DynamicProgramming.Tabulation;
 
 import java.util.function.Supplier;
 
+/**
+ * Choice Diagram for 0/1 Knapsack
+ *
+ *                      i element
+ *                      /\
+ *                     /  \
+ *                    /    \
+ *                 i <= W  i > W
+ *                    /\     |
+ *                   √  X    X
+ *         (Include) (Not Include)  (Not Include)
+ *
+ * Here, for entire choice diagram we just process element once by passing {n-1} or to say {i-1}
+ */
 public class DP1_Knapsack_Zero_One {
 
     Supplier<Knapsack> knapsackSupplier = () -> {
         Knapsack knapsack = new Knapsack();
         knapsack.weights = new int[]{1, 3, 4, 5};
         knapsack.profits = new int[]{1, 3, 8, 7};
-        knapsack.bagCapacity = 7;
+        knapsack.bagCapacity = 8;
         return knapsack;
     };
     private int[][] dp;
