@@ -1,4 +1,4 @@
-package DynamicProgramming.Tabulation;
+package DynamicProgramming.Tabulation.dp1;
 
 /**
  * Subset Sum problem similar to 0/1 Knapsack.

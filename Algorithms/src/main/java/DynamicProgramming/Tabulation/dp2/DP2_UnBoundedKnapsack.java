@@ -1,4 +1,4 @@
-package DynamicProgramming.Tabulation;
+package DynamicProgramming.Tabulation.dp2;
 
 /**
  * Unbounded Knapsack --> Allow to choose the same element multiple times.

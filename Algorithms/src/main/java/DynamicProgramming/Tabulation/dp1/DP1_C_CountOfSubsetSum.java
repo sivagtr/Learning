@@ -1,4 +1,4 @@
-package DynamicProgramming.Tabulation;
+package DynamicProgramming.Tabulation.dp1;
 /**
  * Count of Subset Sum problem similar to 0/1 Knapsack.
  * Here also we have sum as like bag. For Each element, we can either choose to include or exclude it.

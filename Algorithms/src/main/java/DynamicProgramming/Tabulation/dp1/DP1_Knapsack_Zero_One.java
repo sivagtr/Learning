@@ -1,4 +1,4 @@
-package DynamicProgramming.Tabulation;
+package DynamicProgramming.Tabulation.dp1;
 
 import java.util.function.Supplier;
 
