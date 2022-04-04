@@ -53,7 +53,7 @@ public class DP1_B_EqualSubsetSum {
 				} else if(i == 0) {
 					dp[i][j] = false;
 				} else if(arr[i - 1] <= j) {
-					dp[i][j] = dp[i - 1][j] || dp[i][j - arr[i - 1]];
+					dp[i][j] = dp[i - 1][j] || dp[i-1][j - arr[i - 1]];
 				} else {
 					dp[i][j] = dp[i - 1][j];
 				}
