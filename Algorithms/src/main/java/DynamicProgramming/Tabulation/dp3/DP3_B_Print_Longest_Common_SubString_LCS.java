@@ -32,14 +32,16 @@ public class DP3_B_Print_Longest_Common_SubString_LCS {
 		int i = dp.length - 1;
 		int j = dp[i].length - 1;
 		while((i != 0 || j != 0) && dp[i][j] != 0) {
-			if(dp[i - 1][j] == dp[i][j]) {
-				i--;
-			} else if(dp[i][j - 1] == dp[i][j]) {
-				j--;
-			} else {
-				ans = x.charAt(i-1) + ans;
+			if(x.charAt(i-1) == y.charAt(j-1)){
+				ans = x.charAt(i - 1) + ans;
 				i--;
 				j--;
+			}else{
+				if(dp[i-1][j]>dp[i][j-1]){
+					i--;
+				}else{
+					j--;
+				}
 			}
 		}
 		System.out.println("Longest SubString is : " + ans);
