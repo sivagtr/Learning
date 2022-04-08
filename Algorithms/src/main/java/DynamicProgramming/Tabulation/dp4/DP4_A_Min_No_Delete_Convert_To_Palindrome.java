@@ -7,7 +7,7 @@ public class DP4_A_Min_No_Delete_Convert_To_Palindrome {
 	}
 
 	private void solve() {
-		String x = "agbccba";
+		String x = "aebcbda";
 
 		/**
 		 * Idea: Perform Longest Palindromic SubSequence(Take reverse and perform LCS) and delete the remaining characters.
