@@ -36,50 +36,48 @@ public class DP3_C_Shortest_Common_SuperSequence {
 		int i = dp.length - 1;
 		int j = dp[i].length - 1;
 		String lcs = "";
-		while((i != 0 || j != 0) && dp[i][j] != 0) {
-			if(x.charAt(i-1) == y.charAt(j-1)){
+		while(i > 0 && j > 0) {
+			if(x.charAt(i - 1) == y.charAt(j - 1)) {
 				lcs = x.charAt(i - 1) + lcs;
 				i--;
 				j--;
-			}else{
-				if(dp[i-1][j]>dp[i][j-1]){
+			} else {
+				if(dp[i - 1][j] > dp[i][j - 1]) {
 					i--;
-				}else{
+				} else {
 					j--;
 				}
 			}
 		}
 		System.out.println("Longest Common SubSequence : " + lcs);
-		i = j = 0;
-		int k = 0;
+
+		i = dp.length - 1;
+		j = dp[i].length - 1;
 		String ans = "";
-		while(i < x.length() && j < y.length() && k<lcs.length()) {
-			char xc = x.charAt(i);
-			char yc = y.charAt(j);
-			char lc = lcs.charAt(k);
-			if(xc != yc && xc != lc && yc != lc) {
-				ans += xc +""+ yc;
-				i++;
-				j++;
-			} else if(xc == lc && yc != lc){
-				ans += yc;
-				j++;
-			} else if(xc != lc && yc == lc){
-				ans += xc;
-				i++;
-			} else{
-				ans+= lc;
-				i++;
-				j++;
-				k++;
+		while(i > 0 && j > 0) {
+			if(x.charAt(i - 1) == y.charAt(j - 1)) {
+				ans = x.charAt(i - 1) + ans;
+				i--;
+				j--;
+			} else {
+				if(dp[i - 1][j] > dp[i][j - 1]) {
+					ans = x.charAt(i - 1) + ans;
+					i--;
+				} else {
+					ans = y.charAt(j - 1) + ans;
+					j--;
+				}
 			}
 		}
-		while(i < x.length()) {
-			ans += x.charAt(i++);
+		while(i > 0) {
+			ans = x.charAt(i - 1) + ans;
+			i--;
 		}
-		while(j < y.length()) {
-			ans += y.charAt(j++);
+		while(j > 0) {
+			ans = y.charAt(j - 1) + ans;
+			j--;
 		}
 		System.out.println("Shortest Common SuperSequence is : " + ans);
+
 	}
 }
