@@ -1,0 +1,12 @@
+For Running a Single File
+
+    go run p1-hello-world.go
+
+For Build
+
+    go build p1-hello-world.go
+
+    For Execution
+        ./p1-hello-world
+
+        
